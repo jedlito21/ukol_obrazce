@@ -43,9 +43,13 @@ print("\n")
 # kříž
 
 def ukol_5(x):
+     h = x
      for i in range(x):
           print(" "*i + k + ((x+4)*" ") + k + " "*i)
           x = x-2
+     for i in range(h):
+          print(" " * i + k + ((x + 2) * " ") + k + " " * i)
+          x = x + 2
 
 
 # diamant
