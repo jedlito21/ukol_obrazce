@@ -44,8 +44,24 @@ print("\n")
 
 def ukol_5(x):
      for i in range(x):
-          print(o*i + k + ((x+4)*o) + k + o*i)
+          print(" "*i + k + ((x+4)*" ") + k + " "*i)
           x = x-2
+
+
+# diamant
+
+def ukol_6(x):
+     p = 1
+     s = x
+     for i in range(x):
+          print(((x - 1) * " ") + (p * "#") + ((x - 1) * " "))
+          x = x - 1
+          p = p + 2
+
+     for i in range(s):
+          print(((x - 1) * " ") + (p * "#") + ((x - 1) * " "))
+          x = x + 1
+          p = p - 2
 
 
 
@@ -55,3 +71,4 @@ print(ukol_2(x))
 print(ukol_3(x))
 print(ukol_4(x))
 print(ukol_5(x))
+print(ukol_6(x))
